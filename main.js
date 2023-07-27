@@ -95,7 +95,6 @@ var audioLoader = new THREE.AudioLoader();
 var listener = new THREE.AudioListener();
 var audio = new THREE.Audio(listener);
 // create a global audio source
-const sound = new THREE.Audio(listener);
 audioLoader.load("/HowlsMovingCastle.mp3", function (buffer) {
   audio.setBuffer(buffer);
   audio.setLoop(true);
